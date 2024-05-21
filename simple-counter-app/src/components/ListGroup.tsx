@@ -12,7 +12,9 @@ function ListGroup() {
           <li
             key={city}
             className={
-              selectedIndex === index ? "list-group-item active" : "list-group"
+              selectedIndex === index
+                ? "list-group-item active"
+                : "list-group-item"
             }
             onClick={() => {
               setSelectedIndex(index);
